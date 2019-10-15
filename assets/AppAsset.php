@@ -25,6 +25,7 @@ class AppAsset extends AssetBundle
         'css/oiltilda.css',
     ];
     public $js = [
+        '/js/main.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

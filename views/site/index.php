@@ -3,6 +3,11 @@
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
+
+use yii\bootstrap\ActiveForm;
+use yii\helpers\Html;
+use yii\bootstrap\Modal;
+
 ?>
 <div id="rec111712183" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
     <!-- T396 -->
@@ -22,7 +27,7 @@ $this->title = 'My Yii Application';
                     сухость и высыпания.<br></div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117121831561047636913' data-elem-id='1561047636913'>
-                <a class='tn-atom' href="#order:Кокосовое масло Maldives Dreams=299 ">Купить за 299 грн.</a>
+                <a class='tn-atom add-to-cart' data-id="1">Купить за 299 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117121831561068493905' data-elem-id='1561068493905'>
                 <div class='tn-atom'>
@@ -43,119 +48,7 @@ $this->title = 'My Yii Application';
     </div>
     <!-- /T396 -->
 </div>
-<div id="rec111714798" class="r t-rec t-screenmax-640px">
-    <!-- T396 -->
-    <div class='t396'>
-        <div class="t396__artboard">
-            <div class="t396__carrier"></div>
-            <div class="t396__filter"></div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561048133667' data-elem-id='1561048133667'>
-                <div class='tn-atom' field='tn_text_1561048133667'>Кокосовое масло помогает решить 90% проблем с
-                    кожей и волосами<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561048227554' data-elem-id='1561048227554'>
-                <div class='tn-atom' field='tn_text_1561048227554'>Масло Maldives Dreams - сертифицированный
-                    комплекс масел спелого кокоса, в который входит нерафинированное, фракционное и эфирное масло
-                    кокоса, в качестве консерванты используется натуральный витамин Е. Не жирнит, подходит для всех
-                    типов волос и кожи и очень легко смывается<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561048336142' data-elem-id='1561048336142'>
-                <div class='tn-atom'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561048890015' data-elem-id='1561048890015'>
-                <div class='tn-atom'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561048972330' data-elem-id='1561048972330'>
-                <div class='tn-atom'>
-                    <img class='tn-atom__img t-img'
-                         src='https://static.tildacdn.com/tild3137-3739-4431-b962-396631643938/_4.png'
-                         imgfield='tn_img_1561048972330'>
-                </div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049102195' data-elem-id='1561049102195'>
-                <div class='tn-atom' field='tn_text_1561049102195'>Для волос<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049188112' data-elem-id='1561049188112'>
-                <div class='tn-atom' field='tn_text_1561049188112'>Восстанавливает структуру ломких волос<br>
-                    Препятствует сечению кончиков<br> Останавливает выпадение<br> Способствует активному росту<br>Защищает
-                    от травмирующих перепадов температур<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049218139' data-elem-id='1561049218139'>
-                <div class='tn-atom' field='tn_text_1561049218139'>Для кожи<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049218144' data-elem-id='1561049218144'>
-                <div class='tn-atom' field='tn_text_1561049218144'>Устраняет сухость и шелушения<br> Увлажняет и
-                    питает витамином Е<br> Заживляет ранки и микротрещины<br> Разглаживает мелкие морщинки<br>Придаёт
-                    коже упругость и восстанавливает её структуру<br></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049226091' data-elem-id='1561049226091'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561049226091'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049254977' data-elem-id='1561049254977'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561049254977'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049264273' data-elem-id='1561049264273'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561049264273'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561049275333' data-elem-id='1561049275333'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561049275333'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561106992650' data-elem-id='1561106992650'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561106992650'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561106996599' data-elem-id='1561106996599'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561106996599'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561106998568' data-elem-id='1561106998568'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561106998568'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561107000554' data-elem-id='1561107000554'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1561107000554'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561107530115' data-elem-id='1561107530115'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3838-3063-4534-a539-366630383363/_5.png'
-                                          imgfield='tn_img_1561107530115'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561199585155' data-elem-id='1561199585155'>
-                <div class='tn-atom'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981561200003584' data-elem-id='1561200003584'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3834-3535-4036-a530-336331393932/_7.png'
-                                          imgfield='tn_img_1561200003584'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981564769922812' data-elem-id='1564769922812'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1564769922812'></div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1117147981564770570051' data-elem-id='1564770570051'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3033-6530-4436-b462-636535663836/_2515x.png'
-                                          imgfield='tn_img_1564770570051'></div>
-            </div>
-        </div>
-    </div>
-    <!-- /T396 -->
-</div>
-<div id="rec112052924" class="r t-rec t-screenmin-640px">
+<div id="rec112052924" class="r t-rec">
     <!-- T396 -->
     <div class='t396'>
         <div class="t396__artboard">
@@ -330,7 +223,8 @@ $this->title = 'My Yii Application';
             <div class="t396__filter"></div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064134024' data-elem-id='1561064134024'>
                 <div class='tn-atom'>
-                    <img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair1.jpg' imgfield='tn_img_1561064134024'>
+                    <img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair1.jpg'
+                         imgfield='tn_img_1561064134024'>
                 </div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064200436' data-elem-id='1561064200436'>
@@ -342,7 +236,8 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064402634' data-elem-id='1561064402634'>
-                <div class='tn-atom'><img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair.jpg' imgfield='tn_img_1561064402634'></div>
+                <div class='tn-atom'><img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair.jpg'
+                                          imgfield='tn_img_1561064402634'></div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064468539' data-elem-id='1561064468539'>
                 <div class='tn-atom' field='tn_text_1561064468539'>Активный рост волос</div>
@@ -354,7 +249,8 @@ $this->title = 'My Yii Application';
             </div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064537985' data-elem-id='1561064537985'>
                 <div class='tn-atom'>
-                    <img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair2.jpg' imgfield='tn_img_1561064537985'>
+                    <img class='tn-atom__img t-img' src='/img/landing_kokos_girl_hair2.jpg'
+                         imgfield='tn_img_1561064537985'>
                 </div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117478481561064574670' data-elem-id='1561064574670'>
@@ -391,7 +287,8 @@ $this->title = 'My Yii Application';
             <div class="t396__carrier"></div>
             <div class="t396__filter"></div>
             <div class='t396__elem tn-elem tn-elem__1117497381470210033144' data-elem-id='1470210033144'>
-                <div class='tn-atom'><img class='tn-atom__img t-img' src='/img/landing_kokos_maslo.jpg' imgfield='tn_img_1470210033144'></div>
+                <div class='tn-atom'><img class='tn-atom__img t-img' src='/img/landing_kokos_maslo.jpg'
+                                          imgfield='tn_img_1470210033144'></div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117497381561066268569' data-elem-id='1561066268569'>
                 <div class='tn-atom'><img class='tn-atom__img t-img'
@@ -1394,3 +1291,33 @@ $this->title = 'My Yii Application';
         </div>
         <!-- /T396 -->
     </div>
+    <?php Modal::begin(['id' => 'cart',
+        'size' => 'modal-lg',
+        'options' => [
+            'tabindex' => false
+        ]]) ?>
+    <div id="products-cart"></div>
+    <?php $form = ActiveForm::begin([
+        'id' => 'cart-form',
+        'enableAjaxValidation' => false,
+        'enableClientValidation' => true,
+    ]); ?>
+
+    <?= $form->field($model, 'name') ?>
+
+    <?= $form->field($model, 'phone') ?>
+
+    <?= $form->field($model, 'email') ?>
+
+    <?= $form->field($model, 'area') ?>
+
+    <?= $form->field($model, 'city') ?>
+
+    <?= $form->field($model, 'warehouse') ?>
+
+    <div class="form-group">
+        <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button', 'id' => 'send-order']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+    <?php Modal::end() ?>

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\CartForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -61,7 +62,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new CartForm();
+        return $this->render('index', [
+            'model' => $model
+        ]);
     }
 
     /**
@@ -125,4 +129,38 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionAdd()
+    {
+        if (Yii::$app->request->isAjax) {
+            $id = (int)Yii::$app->request->get('id');
+            $count = (int)Yii::$app->request->get('count');
+            $name = (string)Yii::$app->request->get('name');
+            $this->layout = false;
+            return $this->render('cart-modal', [
+                'id' => $id,
+                'count' => $count,
+                'name' => $name
+            ]);
+        }
+    }
+
+    public function actionSend()
+    {
+        $model= new CartForm();
+//        if (Yii::$app->request->isAjax && $model->validate()) {
+            $id = (int)Yii::$app->request->post('id');
+            $count = (int)Yii::$app->request->post('count');
+            $name = (string)Yii::$app->request->post('name');
+            $email = (string)Yii::$app->request->post('email');
+            $phone = (string)Yii::$app->request->post('phone');
+            $area = (string)Yii::$app->request->post('area');
+            $city = (string)Yii::$app->request->post('city');
+            $warehouse = (string)Yii::$app->request->post('warehouse');
+            $this->layout = false;
+            return $this->render('cart-modal', [
+                'id' => $id,
+            ]);
+        }
+//    }
 }
