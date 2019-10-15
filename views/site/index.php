@@ -360,6 +360,9 @@ use yii\bootstrap\Modal;
             <div class='tn-atom' field='tn_text_1470210011265'>6 причин купить кокосовое масло Maldives Dreams
                 <br></div>
         </div>
+        <div class="oil-spoon-img">
+            <img src="/img/landing_kokos_palma.jpg">
+        </div>
         <div class='t396__elem tn-elem tn-elem__1117497571561064164290' data-elem-id='1561064164290'>
             <div class='tn-atom'></div>
         </div>
@@ -389,27 +392,8 @@ use yii\bootstrap\Modal;
         <div class='t396__elem tn-elem tn-elem__1117497571561065306147' data-elem-id='1561065306147'>
             <div class='tn-atom'></div>
         </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561065435668' data-elem-id='1561065435668'>
-            <div class='tn-atom'>
-                <img class='tn-atom__img t-img'
-                     src='https://static.tildacdn.com/tild6534-6161-4731-b866-383239333838/photo.png'
-                     imgfield='tn_img_1561065435668'>
-            </div>
-        </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561065460745' data-elem-id='1561065460745'>
-            <div class='tn-atom'>
-                <img class='tn-atom__img t-img'
-                     src='https://static.tildacdn.com/tild6539-3935-4961-b239-383362346231/727536_medical_512x5.png'
-                     imgfield='tn_img_1561065460745'>
-            </div>
-        </div>
         <div class='t396__elem tn-elem tn-elem__1117497571561065519190' data-elem-id='1561065519190'>
             <div class='tn-atom'></div>
-        </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561065582538' data-elem-id='1561065582538'>
-            <div class='tn-atom'><img class='tn-atom__img t-img'
-                                      src='https://static.tildacdn.com/tild3865-6633-4462-b037-386439376262/_19.png'
-                                      imgfield='tn_img_1561065582538'></div>
         </div>
         <div class='t396__elem tn-elem tn-elem__1117497571561195638852' data-elem-id='1561195638852'>
             <div class='tn-atom'></div>
@@ -421,11 +405,6 @@ use yii\bootstrap\Modal;
         <div class='t396__elem tn-elem tn-elem__1117497571561195648513' data-elem-id='1561195648513'>
             <div class='tn-atom' field='tn_text_1561195648513'>Гиппоаллергенно</div>
         </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561195700285' data-elem-id='1561195700285'>
-            <div class='tn-atom'><img class='tn-atom__img t-img'
-                                      src='https://static.tildacdn.com/tild3361-6362-4434-b263-336134663238/34516.png'
-                                      imgfield='tn_img_1561195700285'></div>
-        </div>
         <div class='t396__elem tn-elem tn-elem__1117497571561195744195' data-elem-id='1561195744195'>
             <div class='tn-atom'></div>
         </div>
@@ -436,11 +415,6 @@ use yii\bootstrap\Modal;
             <div class='tn-atom' field='tn_text_1561195756246'>Масло подходит для ухода за детской кожей и его
                 можно использовать маме во время беременности и в период лактации. <br></div>
         </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561195796544' data-elem-id='1561195796544'>
-            <div class='tn-atom'><img class='tn-atom__img t-img'
-                                      src='https://static.tildacdn.com/tild6564-6364-4865-a539-353630393435/_40.png'
-                                      imgfield='tn_img_1561195796544'></div>
-        </div>
         <div class='t396__elem tn-elem tn-elem__1117497571561195859590' data-elem-id='1561195859590'>
             <div class='tn-atom'></div>
         </div>
@@ -450,11 +424,6 @@ use yii\bootstrap\Modal;
         <div class='t396__elem tn-elem tn-elem__1117497571561195872580' data-elem-id='1561195872580'>
             <div class='tn-atom' field='tn_text_1561195872580'>Натуральный аромат спелого кокоса будоражит
                 рецепторы и превращает каждую процедуру ухода за собой в небольшой SPA-сеанс. <br></div>
-        </div>
-        <div class='t396__elem tn-elem tn-elem__1117497571561196013921' data-elem-id='1561196013921'>
-            <div class='tn-atom'><img class='tn-atom__img t-img'
-                                      src='https://static.tildacdn.com/tild3233-3366-4237-b434-393864396530/photo.png'
-                                      imgfield='tn_img_1561196013921'></div>
         </div>
     </div>
 </div>
@@ -1133,23 +1102,8 @@ use yii\bootstrap\Modal;
                 </div>
                 <div class='t396__elem tn-elem tn-elem__1117520531470210033144' data-elem-id='1470210033144'>
                     <div class='tn-atom'><img class='tn-atom__img t-img'
-                                              src='https://static.tildacdn.com/tild6135-6166-4062-b331-343261633336/photo.png'
+                                              src='/img/landing_kokos_island.jpg'
                                               imgfield='tn_img_1470210033144'></div>
-                </div>
-                <div class='t396__elem tn-elem tn-elem__1117520531561066768379' data-elem-id='1561066768379'>
-                    <div class='tn-atom'><img class='tn-atom__img t-img'
-                                              src='https://static.tildacdn.com/tild3734-3063-4864-b035-316563666366/2.png'
-                                              imgfield='tn_img_1561066768379'></div>
-                </div>
-                <div class='t396__elem tn-elem tn-elem__1117520531561066794114' data-elem-id='1561066794114'>
-                    <div class='tn-atom'><img class='tn-atom__img t-img'
-                                              src='https://static.tildacdn.com/tild3065-3866-4338-b737-663264313361/photo.png'
-                                              imgfield='tn_img_1561066794114'></div>
-                </div>
-                <div class='t396__elem tn-elem tn-elem__1117520531561066828099' data-elem-id='1561066828099'>
-                    <div class='tn-atom'><img class='tn-atom__img t-img'
-                                              src='https://static.tildacdn.com/tild6536-3565-4565-b531-383737376166/_27.png'
-                                              imgfield='tn_img_1561066828099'></div>
                 </div>
                 <div class='t396__elem tn-elem tn-elem__1117520531561066881706' data-elem-id='1561066881706'>
                     <div class='tn-atom' field='tn_text_1561066881706'>Как самостоятельное средство</div>
