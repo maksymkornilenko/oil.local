@@ -18,13 +18,8 @@ use yii\bootstrap\Modal;
             <div class='t396__elem tn-elem tn-elem__1117121831561047414104' data-elem-id='1561047414104'>
                 <div class='tn-atom' field='tn_text_1561047414104'>Косметическое кокосовое масло</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1117121831561047474186' data-elem-id='1561047474186'>
-                <div class='tn-atom' field='tn_text_1561047474186'>Только 3 дня скидка 40%!</div>
-            </div>
             <div class='t396__elem tn-elem tn-elem__1117121831561047519968' data-elem-id='1561047519968'>
-                <div class='tn-atom' field='tn_text_1561047519968'>С 1-го применения - шёлковые волосы!
-                    Восстанавливает ломкие волосы и стимулирует очень быстрый рост. Делает кожу нежной, устраняет
-                    сухость и высыпания.<br></div>
+                <div class='tn-atom' field='tn_text_1561047519968'>Восстанавливает ломкие волосы и стимулирует очень быстрый рост.<br></div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117121831561047636913' data-elem-id='1561047636913'>
                 <a class='tn-atom add-to-cart' data-id="1">Купить за 299 грн.</a>
@@ -43,6 +38,13 @@ use yii\bootstrap\Modal;
                 <div class='tn-atom'>
                     <img class='tn-atom__img t-img' src='/img/salecoco.png' imgfield='tn_img_1561104214239'>
                 </div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__1117121831561047519968' data-elem-id='1561047519970'>
+                <div class='tn-atom' field='tn_text_1561047519968'>Делает кожу нежной, устраняет
+                    сухость и высыпания.<br></div>
+            </div>
+            <div class='t396__elem tn-elem tn-elem__1117121831561047519968' data-elem-id='1561047519969'>
+                <div class='tn-atom' field='tn_text_1561047519968'>С 1-го применения шёлковые волосы!<br></div>
             </div>
         </div>
     </div>
@@ -290,13 +292,10 @@ use yii\bootstrap\Modal;
                 <div class='tn-atom'><img class='tn-atom__img t-img' src='/img/landing_kokos_maslo.jpg'
                                           imgfield='tn_img_1470210033144'></div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1117497381561066268569' data-elem-id='1561066268569'>
-                <div class='tn-atom'><img class='tn-atom__img t-img'
-                                          src='https://static.tildacdn.com/tild3534-6565-4634-a536-653835633731/_3.png'
-                                          imgfield='tn_img_1561066268569'></div>
-            </div>
             <div class='t396__elem tn-elem tn-elem__1117497381561066343690' data-elem-id='1561066343690'>
                 <div class='tn-atom' field='tn_text_1561066343690'>Доказано</div>
+            </div>
+            <div class='blue-balloon'>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117497381561066375010' data-elem-id='1561066375010'>
                 <div class='tn-atom' field='tn_text_1561066375010'>Кокосовое масло улучшает состояние волос, кожи
@@ -1100,6 +1099,7 @@ use yii\bootstrap\Modal;
                 <div class='t396__elem tn-elem tn-elem__1117520531470210011265' data-elem-id='1470210011265'>
                     <div class='tn-atom' field='tn_text_1470210011265'>Как использовать</div>
                 </div>
+                <div class="pink-balloon"></div>
                 <div class='t396__elem tn-elem tn-elem__1117520531470210033144' data-elem-id='1470210033144'>
                     <div class='tn-atom'><img class='tn-atom__img t-img'
                                               src='/img/landing_kokos_island.jpg'
