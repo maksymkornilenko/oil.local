@@ -24,7 +24,7 @@ use yii\bootstrap\Carousel;
                 <div class='tn-atom' field='tn_text_1561047519968'>Восстанавливает ломкие волосы и стимулирует очень
                     быстрый рост.<br></div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1117121831561047636913' data-elem-id='1561047636913'>
+            <div class='t396__elem tn-elem tn-elem__1117121831561047636913 add-to-cart' data-elem-id='1561047636913'>
                 <a class='tn-atom add-to-cart' data-id="1">Купить за 299 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1117121831561068493905' data-elem-id='1561068493905'>
@@ -106,8 +106,8 @@ use yii\bootstrap\Carousel;
         <div class="t396__artboard">
             <div class="t396__carrier"></div>
             <div class="t396__filter"></div>
-            <div class='t396__elem tn-elem tn-elem__1120569771561268349741' data-elem-id='1561268349741'>
-                <a class='tn-atom' href="#popup:myform">Купить за 300 грн.</a>
+            <div class='t396__elem tn-elem tn-elem__1120569771561268349741 add-to-cart' data-elem-id='1561268349741'>
+                <a class='tn-atom add-to-cart' href="#popup:myform">Купить за 299 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1120569771561268349747' data-elem-id='1561268349747'>
                 <div class='tn-atom' field='tn_text_1561268349747'>
@@ -119,17 +119,12 @@ use yii\bootstrap\Carousel;
                     <del>600 грн.</del>
                 </div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1120569771561268351707' data-elem-id='1561268351707'><a
-                        class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1120569771561268351707 add-to-cart' data-elem-id='1561268351707'><a
+                        class='tn-atom add-to-cart'
                         href="#popup:myform">Купить за
-                    300 грн.</a></div>
+                    299 грн.</a></div>
             <div class='t396__elem tn-elem tn-elem__1120569771561268351714' data-elem-id='1561268351714'>
                 <div class='tn-atom' field='tn_text_1561268351714'>По цене в 2 раза ниже обычной!</div>
-            </div>
-            <div class='t396__elem tn-elem tn-elem__1120569771561268351718' data-elem-id='1561268351718'>
-                <div class='tn-atom' field='tn_text_1561268351718'>
-                    <del>600 грн.</del>
-                </div>
             </div>
             <div class='t396__elem tn-elem tn-elem__1120569771561268438170' data-elem-id='1561268438170'>
                 <div class='tn-atom' field='tn_text_1561268438170'>По цене в 2 раза ниже обычной!</div>
@@ -137,8 +132,8 @@ use yii\bootstrap\Carousel;
             <div class='t396__elem tn-elem tn-elem__1120569771561268444952' data-elem-id='1561268444952'>
                 <div class='tn-atom' field='tn_text_1561268444952'>Только 3 дня скидка 40%!</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1120569771561268589823' data-elem-id='1561268589823'>
-                <a class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1120569771561268589823 add-to-cart' data-elem-id='1561268589823'>
+                <a class='tn-atom add-to-cart'
                    href="#order:Кокосовое масло Maldives Dreams=299 ">Купить
                     за 299 грн.</a></div>
         </div>
@@ -344,8 +339,8 @@ use yii\bootstrap\Carousel;
             <div class='t396__elem tn-elem tn-elem__1123887491561268444952' data-elem-id='1561268444952'>
                 <div class='tn-atom' field='tn_text_1561268444952'>Только 3 дня скидка 40%!</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1123887491561268589823' data-elem-id='1561268589823'><a
-                        class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1123887491561268589823 add-to-cart' data-elem-id='1561268589823'><a
+                        class='tn-atom add-to-cart'
                         href="#order:Кокосовое масло Maldives Dreams=299 ">Купить
                     за 299 грн.</a></div>
         </div>
@@ -437,8 +432,8 @@ use yii\bootstrap\Carousel;
         <div class="t396__artboard">
             <div class="t396__carrier"></div>
             <div class="t396__filter"></div>
-            <div class='t396__elem tn-elem tn-elem__1123888741561268349741' data-elem-id='1561268349741'>
-                <a class='tn-atom' href="#popup:myform">Купить за 300 грн.</a>
+            <div class='t396__elem tn-elem tn-elem__1123888741561268349741 add-to-cart' data-elem-id='1561268349741'>
+                <a class='tn-atom add-to-cart' href="#popup:myform">Купить за 300 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1123888741561268349747' data-elem-id='1561268349747'>
                 <div class='tn-atom' field='tn_text_1561268349747'>По цене в 2 раза ниже обычной!</div>
@@ -448,8 +443,8 @@ use yii\bootstrap\Carousel;
                     <del>600 грн.</del>
                 </div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1123888741561268351707' data-elem-id='1561268351707'>
-                <a class='tn-atom' href="#popup:myform">Купить за 300 грн.</a></div>
+            <div class='t396__elem tn-elem tn-elem__1123888741561268351707 add-to-cart' data-elem-id='1561268351707'>
+                <a class='tn-atom add-to-cart' href="#popup:myform">Купить за 300 грн.</a></div>
             <div class='t396__elem tn-elem tn-elem__1123888741561268351714' data-elem-id='1561268351714'>
                 <div class='tn-atom' field='tn_text_1561268351714'>По цене в 2 раза ниже обычной!</div>
             </div>
@@ -464,8 +459,8 @@ use yii\bootstrap\Carousel;
             <div class='t396__elem tn-elem tn-elem__1123888741561268444952' data-elem-id='1561268444952'>
                 <div class='tn-atom' field='tn_text_1561268444952'>Только 3 дня скидка 40%!</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1123888741561268589823' data-elem-id='1561268589823'><a
-                        class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1123888741561268589823 add-to-cart' data-elem-id='1561268589823'><a
+                        class='tn-atom add-to-cart'
                         href="#order:Кокосовое масло Maldives Dreams=299 ">Купить
                     за 299 грн.</a></div>
         </div>
@@ -514,8 +509,8 @@ use yii\bootstrap\Carousel;
         <div class="t396__artboard">
             <div class="t396__carrier"></div>
             <div class="t396__filter"></div>
-            <div class='t396__elem tn-elem tn-elem__1139474991561268349741' data-elem-id='1561268349741'><a
-                        class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1139474991561268349741 add-to-cart' data-elem-id='1561268349741'><a
+                        class='tn-atom add-to-cart'
                         href="#popup:myform">Купить за
                     300 грн.</a></div>
             <div class='t396__elem tn-elem tn-elem__1139474991561268349747' data-elem-id='1561268349747'>
@@ -526,8 +521,8 @@ use yii\bootstrap\Carousel;
                     <del>600 грн.</del>
                 </div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1139474991561268351707' data-elem-id='1561268351707'><a
-                        class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1139474991561268351707 add-to-cart' data-elem-id='1561268351707'><a
+                        class='tn-atom add-to-cart'
                         href="#popup:myform">Купить за
                     300 грн.</a></div>
             <div class='t396__elem tn-elem tn-elem__1139474991561268351714' data-elem-id='1561268351714'>
@@ -544,8 +539,8 @@ use yii\bootstrap\Carousel;
             <div class='t396__elem tn-elem tn-elem__1139474991561268444952' data-elem-id='1561268444952'>
                 <div class='tn-atom' field='tn_text_1561268444952'>Только 3 дня скидка 40%!</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1139474991561268589823' data-elem-id='1561268589823'>
-                <a class='tn-atom'
+            <div class='t396__elem tn-elem tn-elem__1139474991561268589823 add-to-cart' data-elem-id='1561268589823'>
+                <a class='tn-atom add-to-cart'
                    href="#order:Кокосовое масло Maldives Dreams=299 ">Купить
                     за 299 грн.</a></div>
             <div class='t396__elem tn-elem tn-elem__1139474991562144959460' data-elem-id='1562144959460'>
@@ -677,8 +672,8 @@ use yii\bootstrap\Carousel;
         <div class="t396__artboard">
             <div class="t396__carrier"></div>
             <div class="t396__filter"></div>
-            <div class='t396__elem tn-elem tn-elem__1123888991561268349741' data-elem-id='1561268349741'>
-                <a class='tn-atom' href="#popup:myform">Купить за 300 грн.</a>
+            <div class='t396__elem tn-elem tn-elem__1123888991561268349741 add-to-cart' data-elem-id='1561268349741'>
+                <a class='tn-atom add-to-cart' href="#popup:myform">Купить за 300 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1123888991561268349747' data-elem-id='1561268349747'>
                 <div class='tn-atom' field='tn_text_1561268349747'>По цене в 2 раза ниже обычной!</div>
@@ -688,8 +683,8 @@ use yii\bootstrap\Carousel;
                     <del>600 грн.</del>
                 </div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1123888991561268351707' data-elem-id='1561268351707'>
-                <a class='tn-atom' href="#popup:myform">Купить за 300 грн.</a>
+            <div class='t396__elem tn-elem tn-elem__1123888991561268351707 add-to-cart' data-elem-id='1561268351707'>
+                <a class='tn-atom add-to-cart' href="#popup:myform">Купить за 300 грн.</a>
             </div>
             <div class='t396__elem tn-elem tn-elem__1123888991561268351714' data-elem-id='1561268351714'>
                 <div class='tn-atom' field='tn_text_1561268351714'>По цене в 2 раза ниже обычной!</div>
@@ -705,8 +700,8 @@ use yii\bootstrap\Carousel;
             <div class='t396__elem tn-elem tn-elem__1123888991561268444952' data-elem-id='1561268444952'>
                 <div class='tn-atom' field='tn_text_1561268444952'>Только 3 дня скидка 40%!</div>
             </div>
-            <div class='t396__elem tn-elem tn-elem__1123888991561268589823' data-elem-id='1561268589823'>
-                <a class='tn-atom' href="#order:Кокосовое масло Maldives Dreams=299 ">Купить за 299 грн.</a>
+            <div class='t396__elem tn-elem tn-elem__1123888991561268589823 add-to-cart' data-elem-id='1561268589823'>
+                <a class='tn-atom add-to-cart' href="#order:Кокосовое масло Maldives Dreams=299 ">Купить за 299 грн.</a>
             </div>
         </div>
     </div>

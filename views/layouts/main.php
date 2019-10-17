@@ -26,27 +26,27 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Описание', 'url' => ['/site/index']],
-            ['label' => 'Гарантия результата', 'url' => ['/site/about']],
-            ['label' => 'Отзывы', 'url' => ['/site/contact']],
-            ['label' => 'Оформить заказ', 'url' => ['/site/contact']],
-        ],
-    ]);
-    NavBar::end();
-    ?>
-    <?= Alert::widget() ?>
-    <?= $content ?>
+<?php
+NavBar::begin([
+    'brandLabel' => Yii::$app->name,
+    'brandUrl' => Yii::$app->homeUrl,
+    'options' => [
+        'class' => 'navbar-inverse navbar-fixed-top',
+    ],
+]);
+echo Nav::widget([
+    'options' => ['class' => 'navbar-nav navbar-right'],
+    'items' => [
+        ['label' => 'Описание'],
+        ['label' => 'Гарантия результата'],
+        ['label' => 'Отзывы'],
+        ['label' => 'Оформить заказ'],
+        ['label' => 'Получить консультацию', 'options'=>['class'=>'callback']],
+    ],
+]); ?>
+<?php NavBar::end(); ?>
+<?= Alert::widget() ?>
+<?= $content ?>
 <div id="t-footer" class="t-records t-records_animated t-records_visible">
     <div id="rec113930628" class="r t-rec">
         <div class="t396">
