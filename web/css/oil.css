@@ -17149,24 +17149,34 @@
 }
 @media screen and (max-width: 1199px) {
     #slider-celebrity{
-        left: 996px;
+        left: 95px;
     }
 }
 
 @media screen and (max-width: 959px) {
     #slider-celebrity{
-        left: 996px;
+        left: 95px;
     }
 }
 
 @media screen and (max-width: 639px) {
     #slider-celebrity{
-        left: 996px;
+        left: 5px;
     }
 }
 
 @media screen and (max-width: 479px) {
     #slider-celebrity{
-        left: 996px;
+        width: 300px;
+        height: 200px;
+        left: 5px;
+    }
+    .item{
+        width: 300px;
+        height: 200px;
+    }
+    .item > iframe{
+        width: 300px;
+        height: 200px;
     }
 }
