@@ -37,29 +37,14 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-            ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
+            ['label' => 'Описание', 'url' => ['/site/index']],
+            ['label' => 'Гарантия результата', 'url' => ['/site/about']],
+            ['label' => 'Отзывы', 'url' => ['/site/contact']],
+            ['label' => 'Оформить заказ', 'url' => ['/site/contact']],
         ],
     ]);
     NavBar::end();
     ?>
-
-    <?= Breadcrumbs::widget([
-        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]) ?>
     <?= Alert::widget() ?>
     <?= $content ?>
 <div id="t-footer" class="t-records t-records_animated t-records_visible">
