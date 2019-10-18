@@ -3,14 +3,14 @@
 /* @var $this \yii\web\View */
 
 /* @var $content string */
-
 use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-
+use app\models\CartForm;
+$client= new CartForm();
+$data = Yii::$app->controller->data;
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -28,7 +28,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <?php
 NavBar::begin([
-    'brandLabel' => Yii::$app->name,
+    'brandLabel' => '<img class="brand" src="/img/labelbrand.png";>',
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-inverse navbar-fixed-top',
@@ -37,11 +37,11 @@ NavBar::begin([
 echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-right'],
     'items' => [
-        ['label' => 'Описание'],
-        ['label' => 'Гарантия результата'],
-        ['label' => 'Отзывы'],
-        ['label' => 'Оформить заказ'],
-        ['label' => 'Получить консультацию', 'options'=>['class'=>'callback']],
+        ['label' => 'Beschreibung'],
+        ['label' => ' Garantiertes Ergebnis'],
+        ['label' => 'Bewertungen'],
+        ['label' => 'Bestellung aufgeben','options'=>['class'=>'add-to-cart']],
+        ['label' => 'Lassen Sie sich beraten', 'options'=>['class'=>'callback']],
     ],
 ]); ?>
 <?php NavBar::end(); ?>
@@ -54,14 +54,14 @@ echo Nav::widget([
                 <div class="t396__carrier" data-artboard-recid="113930628"></div>
                 <div class="t396__filter" data-artboard-recid="113930628"></div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147390128" data-elem-id="1475147390128">
-                    <div class="tn-atom" field="tn_text_1475147390128">КУПИТЬ</div>
+                    <div class="tn-atom" field="tn_text_1475147390128">ZU KAUFEN</div>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147589474" data-elem-id="1475147589474">
                     <div class="tn-atom" field="tn_text_1475147589474">О НАС</div>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147601290" data-elem-id="1475147601290">
-                    <div class="tn-atom" field="tn_text_1475147601290">ООО "Менделеев Лаб"<br>51200, Украина,
-                        Днепропетровская область, г.Новомосковск, ул. Сучкова, д.115 А
+                    <div class="tn-atom" field="tn_text_1475147601290">Jakobergasse 4, 1010 Wien, Austria
+                        YENA GmbH<br>
                     </div>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147675390" data-elem-id="1475147675390">
@@ -71,11 +71,7 @@ echo Nav::widget([
                             class="tn-atom" href="/certification">Сертификаты
                         качества</a></div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475160083840" data-elem-id="1475160083840"><a
-                            class="tn-atom" href="/main"> <img
-                                class="tn-atom__img t-img loaded"
-                                data-original="https://static.tildacdn.com/tild6165-6164-4335-a233-376562333064/logo3.png"
-                                imgfield="tn_img_1475160083840"
-                                src="https://static.tildacdn.com/tild6165-6164-4335-a233-376562333064/logo3.png"> </a>
+                            class="tn-atom" href="/main"> <img class="tn-atom__img t-img loaded"src="/img/labelbrand.png"> </a>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281562140988702" data-elem-id="1562140988702"><a
                             class="tn-atom"
@@ -127,11 +123,7 @@ echo Nav::widget([
                             class="tn-atom" href="/oferta">Договор публичной
                         оферты</a></div>
                 <div class="t396__elem tn-elem tn-elem__1139306281564484950188" data-elem-id="1564484950188"><a
-                            class="tn-atom" href="tel:+38 067 245 2010">+ 38
-                        067 245-20-10</a></div>
-                <div class="t396__elem tn-elem tn-elem__1139306281566893324586" data-elem-id="1566893324586"><a
-                            class="tn-atom" href="tel:+38 067 404-66-01">+ 38
-                        067 404-66-01</a></div>
+                            class="tn-atom" href="tel:+38 067 245 2010">+ 43 6606368677</a></div>
             </div>
         </div>
     </div>
