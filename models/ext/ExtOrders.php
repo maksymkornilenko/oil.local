@@ -12,9 +12,9 @@ use yii\behaviors\TimestampBehavior;
  */
 class ExtOrders extends Orders
 {
-    const ANSWER_SUCCESS = 'Спасибо Ваш заказ принят, менеджер в скором времени свяжется с вами.';
-    const ANSWER_ERROR = 'Ошибка при получении данных';
-    const PRICE = 299;
+    const ANSWER_SUCCESS = 'Vielen Dank. Ihre Bestellung wurde angenommen, der Manager wird Sie in Kürze kontaktieren.';
+    const ANSWER_ERROR = 'Fehler beim Abrufen der Daten';
+    const PRICE = 17;
 
     public static function factory()
     {

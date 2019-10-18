@@ -65,7 +65,7 @@ echo Nav::widget([
                     </div>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147675390" data-elem-id="1475147675390">
-                    <div class="tn-atom" field="tn_text_1475147675390">ДОКУМЕНТАЦИЯ</div>
+                    <div class="tn-atom" field="tn_text_1475147675390">DOKUMENTATION</div>
                 </div>
                 <div class="t396__elem tn-elem tn-elem__1139306281475147678114" data-elem-id="1475147678114"><a
                             class="tn-atom" href="/certification">Сертификаты

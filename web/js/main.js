@@ -211,10 +211,11 @@ $('#cart-form').on('submit', function (e) {
     var name = $('#cartform-name').val();
     var phone = $('#cartform-phone').val();
     var email = $('#cartform-email').val();
-    var area = $('#cartform-area').val();
+    var area = $('#cartform-country').val();
     var city = $('#cartform-city').val();
     var warehouse = $('#cartform-warehouse').val();
-    var count = $('.t706__cartwin-count').text();
+    var count = $('.cart-count').text();
+    console.log(count);
     var id = $('.cart-count').data('id');
     var error = $('.help-block-error').text();
     if (name != '' && phone != '' && email != '' && area != '' && city != '' && warehouse != ''&& error=='') {
@@ -234,6 +235,8 @@ $('#cart-form').on('submit', function (e) {
             success: function (res) {
                 if (!res) res = 'cart empty';
                 showCart(res);
+                $("#cart-form")[0].reset();
+                $("#cart-form").yiiActiveForm('resetForm');
             },
             error: function (res) {
                 res = 'error';

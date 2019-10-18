@@ -131,7 +131,7 @@ class SiteController extends Controller
         if (isset($cook['count']->value)) {
             $count += $cook['count']->value;
         }
-        $price = 299;
+        $price = ExtOrders::PRICE;
         $sum = $price * $count;
         $this->setCookie('price', $price);
         $this->setCookie('id', $id);
@@ -231,7 +231,7 @@ class SiteController extends Controller
         $order->area = $request['area'];
         $order->city = $request['city'];
         $order->warehouse = $request['warehouse'];
-        $order->count = (int)$request['count'];
+        $order->count = $request['count'];
         $order->pay = 'cash';
         $formattedPhone = preg_replace('/[^0-9]/', '', $request['phone']);
         $client = Clients::find()->where(['formatted_phone' => $formattedPhone])->one();

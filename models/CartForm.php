@@ -26,7 +26,7 @@ class CartForm extends Model
             // username and password are both required
             [['name', 'phone','email','country','city','warehouse'], 'required'],
             [['email'], 'email'],
-            ['phone', 'match', 'pattern' => '^\+?[38][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$', 'message' => 'Телефон, должен быть в формате +38(XXX)XXX-XX-XX'],
+            ['phone', 'match', 'pattern' => '/^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$/gm', 'message' => 'Телефон, должен быть в формате +38(XXX)XXX-XX-XX'],
         ];
     }
     public function attributeLabels()

@@ -719,7 +719,7 @@ use yii\bootstrap\Carousel;
 <?= $form->field($model, 'warehouse') ?>
 
 <div class="form-group">
-    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button', 'id' => 'send-order']) ?>
+    <?= Html::submitButton('Zu bestellen', ['class' => 'btn btn-primary', 'name' => 'login-button', 'id' => 'send-order']) ?>
 </div>
 
 <?php ActiveForm::end(); ?>
