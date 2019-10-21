@@ -5,7 +5,7 @@
         <div class="t706__product">
             <div class="t706__product-thumb">
                 <div class="t706__product-imgdiv">
-                    <img src="/img/landing_kokos_banka.jpg">
+                    <img src="/image/landing_kokos_banka.jpg">
                 </div>
             </div>
             <div class="t706__product-title t-descr t-descr_sm">
@@ -13,19 +13,19 @@
             </div>
             <div class="t706__product-plusminus t-descr t-descr_sm">
                     <span class="t706__product-minus">
-                        <img src="/img/arrows_circle_minus.svg" data-id="<?= $id ?>"
+                        <img src="/image/arrows_circle_minus.svg" data-id="<?= $id ?>"
                              data-count="1" id="minus-cart">
                     </span>
                 <span class="t706__product-quantity cart-count" data-id="<?= $id ?>"><?= $count ?></span>
                 <span class="t706__product-plus">
-                        <img src="/img/arrows_circle_plus.svg" data-id="<?= $id ?>"
+                        <img src="/image/arrows_circle_plus.svg" data-id="<?= $id ?>"
                              data-count="1" id="plus-cart">
                     </span>
             </div>
             <div class="t706__product-amount t-descr t-descr_sm"><?= $count * $price ?>&nbsp;€
             </div>
             <span class="t706__product-del">
-                    <img src="/img/arrows_circle_remove.svg"
+                    <img src="/image/arrows_circle_remove.svg"
                          class="del-item" data-name="Кокосовое мыло" data-id="<?= $id ?>">
                 </span>
         </div>

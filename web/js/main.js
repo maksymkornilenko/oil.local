@@ -2,6 +2,10 @@ function showCart(cart) {
     $('#products-cart').html(cart);
     $('#cart').modal('show');
 }
+function showAnswer(answer) {
+    $('#callback-answer').html(answer);
+    $('#callback').modal('show');
+}
 function addToCart(id, count) {
     $.ajax({
         url: '/site/add',
@@ -12,6 +16,7 @@ function addToCart(id, count) {
             showCart(res);
             $('.cartwin-prodamount-wrap').css({textAlign:'right'});
             $('.t706__cartwin-count').css({display:'none'});
+            $('#cart-form').css({display: 'block'})
         },
         error: function (res) {
             res = 'error';
@@ -28,6 +33,7 @@ function deleteAndClearCart(res) {
     if ($('.t706__cartwin-count').text() == '') {
         $("#cart-form")[0].reset();
         $("#cart-form").yiiActiveForm('resetForm');
+        $('#cart-form').css({display: 'none'});
         // $('#orders-area').val(null).trigger("change");
         // $('.t706__carticon-counter').text(0);
         // $('.t706__carticon-text').text('Ваша корзина пуста');
@@ -89,8 +95,8 @@ function inputCount() {
         }
         var sum = price * count;
         $('.t706__carticon-counter').text(count);
-        $('.t706__product-amount').text(sum + ' грн');
-        $('.t706__cartwin-prodamount').text(sum + ' грн');
+        $('.t706__product-amount').text(sum + ' €');
+        $('.t706__cartwin-prodamount').text(sum + ' €');
         $('.t706__cartwin-count').text(count);
     }
 
@@ -215,7 +221,6 @@ $('#cart-form').on('submit', function (e) {
     var city = $('#cartform-city').val();
     var warehouse = $('#cartform-warehouse').val();
     var count = $('.cart-count').text();
-    console.log(count);
     var id = $('.cart-count').data('id');
     var error = $('.help-block-error').text();
     if (name != '' && phone != '' && email != '' && area != '' && city != '' && warehouse != ''&& error=='') {
@@ -241,6 +246,38 @@ $('#cart-form').on('submit', function (e) {
             error: function (res) {
                 res = 'error';
                 showCart(res);
+            }
+        });
+    }
+});
+$('.callback').click(function(e){
+    e.preventDefault();
+    $('#callback').modal('show');
+    $('#callback-form').css({display: 'block'});
+});
+$('#callback-form').on('submit', function (e) {
+    e.preventDefault();
+    var name = $('#callbackform-name').val();
+    var phone = $('#callbackform-phone').val();
+    var error = $('.help-block').text();
+    if (name != '' && phone != '' && error=='') {
+        $.ajax({
+            url: '/site/callback',
+            data: {
+                name: name,
+                phone: phone
+            },
+            type: 'post',
+            success: function (res) {
+                if (!res) res = 'cart empty';
+                showAnswer(res);
+                $("#callback-form")[0].reset();
+                $("#callback-form").yiiActiveForm('resetForm');
+                $('#callback-form').css({display: 'none'});
+            },
+            error: function (res) {
+                res = 'error';
+                showAnswer(res);
             }
         });
     }

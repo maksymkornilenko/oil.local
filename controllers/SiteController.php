@@ -2,26 +2,22 @@
 
 namespace app\controllers;
 
-use app\models\CartForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use yii\web\Response;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
 use yii\web\Cookie;
 use app\models\ext\ExtOrderItems;
 use app\models\ext\ExtOrders;
-use app\models\ext\ExtProducts;
 use app\models\Orders;
-use app\models\OrderItems;
 use app\models\Clients;
 use app\models\Products;
+use app\models\Callback;
 
 class SiteController extends Controller
 {
-    public $data=[];
+    public $data = [];
+
     /**
      * {@inheritdoc}
      */
@@ -47,12 +43,13 @@ class SiteController extends Controller
             ],
         ];
     }
+
     public function beforeAction($action)
     {
         $cookies = Yii::$app->request->cookies;
-        $count=0;
-        $sum=0;
-        $name='';
+        $count = 0;
+        $sum = 0;
+        $name = '';
         if (isset($cookies['id']->value)) {
             $productId = (int)$cookies['id']->value;
         } else {
@@ -65,14 +62,14 @@ class SiteController extends Controller
             ]));
             $productId = $products['id'];
         }
-        if(isset($cookies['count']->value)){
-            $count=$cookies['count']->value;
+        if (isset($cookies['count']->value)) {
+            $count = $cookies['count']->value;
         }
-        if(isset($cookies['sum']->value)){
-            $sum=$cookies['sum']->value;
+        if (isset($cookies['sum']->value)) {
+            $sum = $cookies['sum']->value;
         }
-        if(isset($cookies['name']->value)){
-            $name=$cookies['name']->value;
+        if (isset($cookies['name']->value)) {
+            $name = $cookies['name']->value;
         }
         // Все полученные значения заносим в глобальное свойтво 'content', доступное из View и из Layout
         $this->data = [
@@ -83,6 +80,7 @@ class SiteController extends Controller
         ];
         return parent::beforeAction($action);
     }
+
     /**
      * {@inheritdoc}
      */
@@ -106,11 +104,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = new CartForm();
-//        return $this->render('index');
-        return $this->render('index', [
-            'model' => $model
-        ]);
+        return $this->render('index');
     }
 
     /**
@@ -135,23 +129,26 @@ class SiteController extends Controller
         $sum = $price * $count;
         $this->setCookie('price', $price);
         $this->setCookie('id', $id);
-        $this->setCookie('name', $name);
         $this->setCookie('count', $count);
         $this->setCookie('sum', $sum);
-        return $this->renderPartial('cart-modal', ['name' => $name, 'count' => $count, 'price' => $price, 'id' => $id, 'sum' => $sum]);
+        return $this->renderPartial('cart-modal', [
+            'count' => $count,
+            'price' => $price,
+            'id' => $id,
+            'sum' => $sum,
+        ]);
     }
 
     public function actionSave()
     {
-        $request = Yii::$app->request;
-        $id = (int)$request->get('id');
-        $count = (int)$request->get('count');
-        $name = $request->get('name');
+        $request = Yii::$app->request->get();
+        $id = (int)$request['id'];
+        $count = (int)$request['count'];
+        $name = $request['name'];
         $price = 299;
         $count = !$count ? 1 : $count;
         $sum = $count * $price;
         $this->setCookie('id', $id);
-        $this->setCookie('name', $name);
         $this->setCookie('count', $count);
         $this->setCookie('price', $price);
         return $this->renderPartial('cart-modal', [
@@ -159,48 +156,8 @@ class SiteController extends Controller
             'count' => $count,
             'price' => $price,
             'id' => $id,
-            'sum' => $sum
+            'sum' => $sum,
         ]);
-    }
-
-    public function actionArea()
-    {
-        $out = ['results' => ['id' => '', 'text' => '']];
-        $q = isset($_GET['q']) ? $_GET['q'] : null;
-        $id = isset($_GET['id']) ? $_GET['id'] : null;
-
-        if (!is_null($q)) {
-            $areas = Areas::find()->asArray()->select(['`ref` AS `id`', '`description_ru` AS `text`'])->where(['like', 'description_ru', $q])->all();
-            $out['results'] = array_values($areas);
-        } elseif (!is_null($id)) {
-            $areas = Areas::find()->where(['ref' => $id])->one();
-            $out['results'] = ['id' => $id, 'text' => $areas->description_ru];
-        }
-        return Json::encode($out);
-    }
-
-    public function actionCity()
-    {
-        $answer = [];
-        $areasRef = (string)Yii::$app->request->get('value');
-        $city = Cities::find()->where(['area_ref' => $areasRef])->orderBy(['description_ru' => SORT_ASC])->all();
-        foreach ($city as $cities) {
-            $answer[] = '<option value="' . $cities['ref'] . '">' . $cities['description_ru'] . '</option>';
-        }
-        return Json::encode($answer);
-
-
-    }
-
-    public function actionWarehouse()
-    {
-        $answer = [];
-        $cityRef = (string)Yii::$app->request->get('city');
-        $warehouse = Warehouses::find()->where(['city_ref' => $cityRef])->all();
-        foreach ($warehouse as $warehouses) {
-            $answer[] = '<option value="' . $warehouses['ref'] . '" data-number="' . $warehouses['number'] . '">' . $warehouses['description_ru'] . '</option>';
-        }
-        return Json::encode($answer);
     }
 
     public function actionShow()
@@ -214,7 +171,7 @@ class SiteController extends Controller
             'count' => $count,
             'price' => $price,
             'id' => $cookies['id']->value,
-            'sum' => $sum
+            'sum' => $sum,
         ]);
     }
 
@@ -282,6 +239,42 @@ class SiteController extends Controller
         return $this->renderPartial('cart-modal');
     }
 
+    public function actionOfficial()
+    {
+        return $this->render('official');
+    }
+
+    public function actionCertification()
+    {
+        return $this->render('certificate');
+    }
+
+    public function actionPay()
+    {
+        return $this->render('pay');
+    }
+
+    public function actionCallback()
+    {
+        $request=Yii::$app->request->post();
+        $callbackForm = new Callback();
+        $callbackForm->name = $request['name'];
+        $callbackForm->phone = $request['phone'];
+        $callbackForm->formatted_phone = preg_replace('/[^0-9]/', '', $callbackForm->phone);
+        if ($callbackForm->save()) {
+            Yii::$app->session->setFlash('successAnswer', "Vielen Dank, wir werden uns umgehend bei Ihnen melden");
+        } else {
+            Yii::$app->session->setFlash('errorAnswer', "Fehler beim Senden, versuchen Sie es erneut");
+        }
+        $this->layout = false;
+        return $this->render('answer-callback');
+    }
+
+    public function actionError()
+    {
+        $this->layout = false;
+    }
+
     protected function setCookie($name, $value)
     {
         $cookies = Yii::$app->response->cookies;
@@ -290,15 +283,12 @@ class SiteController extends Controller
             'value' => $value,
         ]));
     }
+
     protected function setEmptyCookie()
     {
         $cookies = Yii::$app->response->cookies;
         $cookies->add(new Cookie([
             'name' => 'id',
-            'value' => '',
-        ]));
-        $cookies->add(new Cookie([
-            'name' => 'name',
             'value' => '',
         ]));
         $cookies->add(new Cookie([
@@ -311,13 +301,14 @@ class SiteController extends Controller
         ]));
         return $cookies;
     }
+
     protected function sendData($params)
     {
         $content = http_build_query($params);
         $context = stream_context_create([
                 'http' => [
-                    'header' => "Content-Type: application/x-www-form-urlencoded\r\n".
-                        "Content-Length: ".strlen($content)."\r\n".
+                    'header' => "Content-Type: application/x-www-form-urlencoded\r\n" .
+                        "Content-Length: " . strlen($content) . "\r\n" .
                         "User-Agent:MyAgent/1.0\r\n",
                     'method' => 'POST',
                     'content' => $content

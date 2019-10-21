@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveRecord;
 /**
  * This is the model class for table "callback".
  *
@@ -15,7 +16,7 @@ use yii\behaviors\TimestampBehavior;
  * @property string $name
  * @property string $status
  */
-class Callback extends \yii\db\ActiveRecord
+class Callback extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -31,9 +32,10 @@ class Callback extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['created_at', 'updated_at', 'phone', 'formatted_phone', 'name', 'status'], 'required'],
-            [['created_at', 'updated_at'], 'integer'],
-            [['phone', 'formatted_phone', 'name', 'status'], 'string', 'max' => 255],
+            [['phone', 'name', 'formatted_phone'], 'required'],
+            [['formatted_phone'], 'integer'],
+            [['created_at'], 'safe'],
+            [['name', 'status'], 'string', 'max' => 255],
         ];
     }
     public function behaviors()
@@ -56,13 +58,8 @@ class Callback extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
             'phone' => 'Phone',
-            'formatted_phone' => 'Formatted Phone',
             'name' => 'Name',
-            'status' => 'Status',
         ];
     }
 }
